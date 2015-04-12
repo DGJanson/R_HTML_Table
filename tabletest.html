@@ -1,0 +1,74 @@
+<html>
+
+<head>
+	<style>
+		body {
+			font-family: calibri, sans-serif;
+			font-size: 12pt;
+			background-color: #073642;
+			color: #eee8d5;
+			padding: 20px;
+			width: 800px;
+		}
+		
+		.title {
+			font-size: 14pt;
+			padding: 10px;
+			color: #073642;
+			background-color: #eee8d5;
+		}
+		
+		.table {
+			display: table;
+		}
+		
+		.table_row {
+			display: table-row;
+			padding: 2px;
+		}
+		
+		.table_colname {
+			display: table-cell;
+			font-weight: bold;
+			padding-left: 5px;
+			padding-right: 5px;
+			text-align: right;
+			border-bottom: 1px solid #eee8d5;
+		}
+		
+		.table_cell {
+			display: table-cell;
+			text-align: right;
+			padding: 2px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="title">
+		Test voor R table output
+	</div>
+	
+	<div>
+		<p>Test Table gemaakt met CSS + Divs</p>
+		<div class="table">
+			<div class="table_row">
+				<div class="table_colname">Kolom 1</div>
+				<div class="table_colname">Kolom 2</div>
+			</div>
+			<div class="table_row">
+				<div class="table_cell">1</div>
+				<div class="table_cell">2</div>
+				<div class="table_cell"></div>
+				<div class="table_cell">5</div>
+			</div>
+			<div class="table_row">
+				<div class="table_cell">3</div>
+				<div class="table_cell">4</div>
+				<div class="table_cell">Hele lange tekst</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

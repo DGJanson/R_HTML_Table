@@ -1,0 +1,231 @@
+<html>
+
+<head>
+<style type="text/css">
+.knitr.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+},
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0em 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.rimage.left {
+  text-align: left;
+}
+.rimage.right {
+  text-align: right;
+}
+.rimage.center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
+	<style>
+		body {
+			font-family: calibri, sans-serif;
+			font-size: 12pt;
+			background-color: #073642;
+			color: #eee8d5;
+			padding: 20px;
+			width: 800px;
+		}
+		
+		.title {
+			font-size: 14pt;
+			padding: 10px;
+			color: #073642;
+			background-color: #eee8d5;
+		}
+		
+		.chunk {
+			margin-bottom: 20px;
+		}
+		
+		.table {
+			display: table;
+			margin-bottom: 20px;
+			border-collapse: collapse;
+			border: 1px dotted #eee8d5;
+		}
+		
+		.table_row {
+			display: table-row;
+			padding: 2px;
+			border-bottom: 1px solid #eee8d5;
+		}
+		
+		.table_colname {
+			display: table-cell;
+			font-weight: bold;
+			padding-left: 5px;
+			padding-right: 5px;
+			text-align: right;
+			border-bottom: 2px solid #eee8d5;
+		}
+		
+		.table_rowname {
+			display: table-cell;
+			font-weight: bold;
+			padding-left: 5px;
+			padding-right: 5px;
+			border-right: 2px solid #eee8d5;
+		}
+		
+		.table_cell {
+			display: table-cell;
+			text-align: right;
+			padding: 2px;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="title">
+		Test voor R table output
+
+	</div>
+	
+	<div>
+		<p>Test Table gemaakt met CSS + Divs</p>
+		<div class="table">
+			<div class="table_row">
+				<div class="table_colname">Kolom 1</div>
+				<div class="table_colname">Kolom 2</div>
+			</div>
+			<div class="table_row">
+				<div class="table_cell">1</div>
+				<div class="table_cell">2</div>
+				<div class="table_cell"></div>
+				<div class="table_cell">5</div>
+			</div>
+			<div class="table_row">
+				<div class="table_cell">3</div>
+				<div class="table_cell">4</div>
+				<div class="table_cell">Hele lange tekst</div>
+			</div>
+		</div>
+	</div>
+	<div class="chunk">
+
+		<p>Onderstaande tabel wordt gemaakt met script van een MATRIX</p>
+<div class="table">
+	<div class="table_row">
+		<div class="table_colname"> </div>
+		<div class="table_colname"> Column 1</div>
+		<div class="table_colname"> Column 2</div>
+	</div>
+	<div class="table_row">
+		<div class="table_rowname"> Row 1</div>
+		<div class="table_cell"> 3</div>
+		<div class="table_cell"> 1</div>
+	</div>
+	<div class="table_row">
+		<div class="table_rowname"> Row 2</div>
+		<div class="table_cell"> 3</div>
+		<div class="table_cell"> 4</div>
+	</div>
+	<div class="table_row">
+		<div class="table_rowname"> Row 3</div>
+		<div class="table_cell"> 4</div>
+		<div class="table_cell"> 2</div>
+	</div>
+	<div class="table_row">
+		<div class="table_rowname"> Row 4</div>
+		<div class="table_cell"> 2</div>
+		<div class="table_cell"> 3</div>
+	</div>
+	<div class="table_row">
+		<div class="table_rowname"> Row 5</div>
+		<div class="table_cell"> 1</div>
+		<div class="table_cell"> 1</div>
+	</div>
+</div>
+
+		<p> Let's try een DATAFRAME</p>
+<div class="table">
+	<div class="table_row">
+		<div class="table_colname"> </div>
+		<div class="table_colname"> Column 1</div>
+		<div class="table_colname"> Column 2</div>
+		<div class="table_colname"> Column 3</div>
+	</div>
+	<div class="table_row">
+		<div class="table_rowname"> Row 1</div>
+		<div class="table_cell"> D</div>
+		<div class="table_cell"> 1</div>
+		<div class="table_cell"> test</div>
+	</div>
+	<div class="table_row">
+		<div class="table_rowname"> Row 2</div>
+		<div class="table_cell"> a</div>
+		<div class="table_cell"> 2</div>
+		<div class="table_cell"> test</div>
+	</div>
+	<div class="table_row">
+		<div class="table_rowname"> Row 3</div>
+		<div class="table_cell"> v</div>
+		<div class="table_cell"> 3</div>
+		<div class="table_cell"> test</div>
+	</div>
+	<div class="table_row">
+		<div class="table_rowname"> Row 4</div>
+		<div class="table_cell"> i</div>
+		<div class="table_cell"> 4</div>
+		<div class="table_cell"> test</div>
+	</div>
+	<div class="table_row">
+		<div class="table_rowname"> Row 5</div>
+		<div class="table_cell"> d</div>
+		<div class="table_cell"> 5</div>
+		<div class="table_cell"> test</div>
+	</div>
+</div>
+
+	</div>	
+</body>
+
+</html>
